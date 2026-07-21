@@ -1,10 +1,47 @@
-// Fallback data used when Supabase env vars are not set.
+// Real Fox Solutions installs (demo mode data).
 // Mirrors the columns of supabase/schema.sql
 export const MOCK_PROJECTS = [
-  { id: "P-2601", name: "Frozen Vegetable Line — Monterrey", industry: "Frozen Foods", weigher_type: "14-Head Multihead", bagger_config: "FSDWB4-3PV", stations: 2, bpm: 32, product: "IQF mixed vegetables, 1–2 kg", dwg_number: "11777-S-25497-03-3PV", year: 2026, notes: "Dual wicketed stations with airsweep on both heads. Sync signal wired for dry-contact weigher output via bypass plug.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
-  { id: "P-2534", name: "Tortilla Chip Bagging — Laredo", industry: "Snack Foods", weigher_type: "10-Head Multihead", bagger_config: "FSDWB4-1PF", stations: 1, bpm: 24, product: "Corn tortilla chips, 300–500 g", dwg_number: "11777-S-25497-03-1PF", year: 2025, notes: "Fixed-funnel configuration with product-friendly drop chute. Feed belt delay timer tuned via Hidden Timers screen.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
-  { id: "P-2518", name: "Pet Food Portioning — San Antonio", industry: "Pet Food", weigher_type: "Linear Net Weigher", bagger_config: "FSDWB4-3PF", stations: 2, bpm: 18, product: "Dry kibble, 2.5 kg wicketed bags", dwg_number: "11777-S-25497-03-3PF", year: 2025, notes: "Heavy-product package with reinforced grippers. IFM OGD550 sensors set per v1.2 manual setpoint procedure.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
-  { id: "P-2489", name: "Shredded Cheese Line — Dallas", industry: "Dairy", weigher_type: "14-Head Multihead", bagger_config: "FSDWB4-1PV", stations: 1, bpm: 28, product: "Shredded cheese, 200 g–1 kg", dwg_number: "11777-S-25497-03-1PV", year: 2024, notes: "Washdown-rated panel, GS33-4015 VFD on infeed. Spanish-language HMI package for plant technicians.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
-  { id: "P-2472", name: "Ice Bagging Retrofit — Houston", industry: "Ice / Beverage", weigher_type: "Linear Net Weigher", bagger_config: "FSDWB4-3PV", stations: 2, bpm: 21, product: "Cube ice, 8 lb bags", dwg_number: "11777-S-25497-03-3PV", year: 2024, notes: "Retrofit onto existing NEWTEC weigher using standard sync signal harness. Cobot case packer downstream.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
-  { id: "P-2455", name: "Granola Pouching — El Paso", industry: "Snack Foods", weigher_type: "10-Head Multihead", bagger_config: "FSDWB4-1PF", stations: 1, bpm: 22, product: "Granola clusters, 400 g", dwg_number: "11777-S-25497-03-1PF", year: 2023, notes: "Gentle-handling chute geometry. Recipe changeover under 90 seconds using array-based recipe handler.", model_url: null, video_id: null, layout_image_url: null, is_public: true },
+  {
+    id: "FSSPJF04242026",
+    name: "Berlos Best — Sweet Potato Bagging Line",
+    industry: "Fresh Produce",
+    weigher_type: "NEWTEC 4009 XB2",
+    bagger_config: "FSDWB Flat",
+    stations: 2,
+    bpm: 42,
+    product: "Sweet potatoes, 5 lb bags",
+    dwg_number: "FSSPJF04242026",
+    year: 2026,
+    notes:
+      "Turnkey line running 40–44 bags/min on 5 lb sweet potatoes: " +
+      "NEWTEC 4009 XB2 weigher with PCS 2CC-L-R distribution feeding a dual " +
+      "wicketed bagger, with 24\"×14' infeed elevator, flat and incline " +
+      "discharge conveyors, 60\"Ø pack table, and full service platform access.",
+    model_url: null,
+    video_id: null,
+    layout_image_url: "/layouts/berlos.png",
+    is_public: true,
+  },
+  {
+    id: "FSSPK10052023",
+    name: "LaFrontera Cold Storage — Onion Netting Line",
+    industry: "Fresh Produce",
+    weigher_type: "NEWTEC 4014 XB1",
+    bagger_config: "Giro UB-S50 Net Bagger",
+    stations: 1,
+    bpm: null, // unknown — card and specs show a dash
+    product: "Onions, net bags",
+    dwg_number: "FSSPK10052023",
+    year: 2023,
+    notes:
+      "Full stainless netting line from bulk storage to accumulation: " +
+      "6,000 lb storage bin and grader table feeding a NEWTEC 4014 XB1 with PCS, " +
+      "Giro UB-S50 net bagger with Ilapak V2029 high-speed clipper, inline " +
+      "QC90-2 checkweigher, and 5' rotary accumulator — integrated under a " +
+      "single merging control system with PLC and inverters.",
+    model_url: null,
+    video_id: null,
+    layout_image_url: "/layouts/lafrontera.png",
+    is_public: true,
+  },
 ];
