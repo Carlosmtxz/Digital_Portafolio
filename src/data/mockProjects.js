@@ -18,7 +18,7 @@ export const MOCK_PROJECTS = [
       "wicketed bagger, with 24\"×14' infeed elevator, flat and incline " +
       "discharge conveyors, 60\"Ø pack table, and full service platform access.",
     model_url: null,
-    video_id: null,
+     video_url: "https://www.youtube.com/watch?v=tii3e8IRvGA",
     layout_image_url: "/layouts/berlos.png",
     is_public: true,
   },
